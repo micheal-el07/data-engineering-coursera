@@ -6,7 +6,6 @@ then
   exit
 fi
 
-# This checks if argument 1 and argument 2 are valid directory paths
 if [[ ! -d $1 ]] || [[ ! -d $2 ]]
 then
   echo "Invalid directory path provided"
@@ -54,4 +53,3 @@ tar -czvf $backupFileName ${toBackup[@]}
 
 mv $backupFileName $destDirAbsPath
 
-# Congratulations! You completed the final project for this course!
